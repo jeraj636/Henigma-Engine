@@ -1,36 +1,17 @@
-#include "glad/glad.h"
-#include <GLFW/glfw3.h>
-#include "ostalo.h"
-#include <iostream>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#ifndef OBJEKT_H
+#define OBJEKT_H
 #include <vector>
+#include "ostalo.h"
 #include "komponenta.h"
 class Objekt
 {
 public:
     uint VAO, shaderProgram;
-    Objekt(std::string ime)
-    {
-        _ime = ime;
-    }
-    void nastavi()
-    {
-    }
-    void zanka(uint shaderProgram, uint VAO)
-    {
-        for (int i = 0; i < tabKomponent.size(); i++)
-        {
-            if (tabKomponent[i]->aktivno)
-                tabKomponent[i]->zanka();
-        }
-    }
-
-    std::string dobiIme()
-    {
-        return _ime;
-    }
+    Objekt(std::string ime);
+    void nastavi();
+    void zanka(uint shaderProgram, uint VAO);
+    std::string dobiIme();
+    void poz();
     template <class T>
     void dodajKomponento()
     {
@@ -54,3 +35,4 @@ private:
     std::vector<Komponenta *> tabKomponent;
     std::string _ime;
 };
+#endif

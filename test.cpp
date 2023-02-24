@@ -10,6 +10,7 @@ int main()
     Barva br(0xff0000ff);
     okno.nastavi(800, 600, "heheh");
     okno.dodajObljekt("jj");
+    // okno.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
     okno.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
     okno.spremeniBarvo(br);
     std::cout.flush();
