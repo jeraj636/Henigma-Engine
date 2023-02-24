@@ -10,7 +10,9 @@ int main()
     Barva br(0xff0000ff);
     glavna.nastavi(800, 600, "heheh");
     glavna.dodajObljekt("jj");
-    glavna.poisciObjekt("jj")->nastavi();
+    glavna.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
+    glavna.poisciObjekt("jj")->poisciKomponento<Upodabljalnik>()->poz();
+
     glavna.spremeniBarvo(br);
     std::cout.flush();
     while (!glfwWindowShouldClose(glavna.okno))

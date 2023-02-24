@@ -7,7 +7,28 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
 
-// nastavi //zanka
+class Komponenta
+{
+
+public:
+    virtual void nastavi() = 0;
+    virtual void zanka(uint shaderProgram, uint VAO) = 0;
+    bool aktivno = 1;
+};
+class Upodabljalnik : public Komponenta
+{
+public:
+    void nastavi() override
+    {
+        io::izpis("upodabljalnik je nastavljen", io::type::msg);
+    }
+    void zanka(uint shaderProgram, uint VAO) override
+    {
+        glBindVertexArray(VAO);
+        glUseProgram(shaderProgram);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    }
+};
 class Objekt
 {
 public:
@@ -17,22 +38,44 @@ public:
     }
     void nastavi()
     {
-        io::izpis("OBJEKT JE NASTAVLJEN", io::type::msg);
     }
     void zanka(uint shaderProgram, uint VAO)
     {
-        glUseProgram(shaderProgram);
-        glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        for (int i = 0; i < tabKomponent.size(); i++)
+        {
+            if (tabKomponent[i]->aktivno)
+                tabKomponent[i]->zanka(shaderProgram, VAO);
+        }
     }
+
     std::string dobiIme()
     {
         return _ime;
     }
+    template <class T>
+    void dodajKomponento()
+    {
+        tabKomponent.push_back(new T);
+        tabKomponent.back()->nastavi();
+    }
+    template <class T>
+    T *poisciKomponento()
+    {
+        for (int i = 0; i < tabKomponent.size(); i++)
+        {
+            T *kaz = dynamic_cast<T *>(tabKomponent[i]);
+            if (kaz != nullptr)
+                return kaz;
+        }
+        io::izpis("NI TE KOMPONENTE V TEM OBJEKTU", io::type::msg);
+        return nullptr;
+    }
 
 private:
+    std::vector<Komponenta *> tabKomponent;
     std::string _ime;
 };
+
 class Barva
 {
 public:
