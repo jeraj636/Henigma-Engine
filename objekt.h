@@ -1,18 +1,16 @@
-#pragma once
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
+#include "ostalo.h"
+#include <iostream>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
-// #include "render.h"
-#include "ostalo.h"
 #include "komponenta.h"
 class Objekt
 {
 public:
-    Okno *okno;
-    uint shaderProgram, VAO;
+    uint VAO, shaderProgram;
     Objekt(std::string ime)
     {
         _ime = ime;
@@ -20,12 +18,12 @@ public:
     void nastavi()
     {
     }
-    void zanka()
+    void zanka(uint shaderProgram, uint VAO)
     {
         for (int i = 0; i < tabKomponent.size(); i++)
         {
             if (tabKomponent[i]->aktivno)
-                tabKomponent[i]->zanka(this);
+                tabKomponent[i]->zanka();
         }
     }
 
@@ -48,7 +46,7 @@ public:
             if (kaz != nullptr)
                 return kaz;
         }
-        // io::izpis("NI TE KOMPONENTE V TEM OBJEKTU", io::type::msg);
+        io::izpis("NI TE KOMPONENTE V TEM OBJEKTU", io::type::msg);
         return nullptr;
     }
 

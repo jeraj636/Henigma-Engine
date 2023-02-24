@@ -1,4 +1,3 @@
-#pragma once
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
 #include "ostalo.h"
@@ -129,7 +128,7 @@ public:
 
         for (int i = 0; i < tabObjektov.size(); i++)
         {
-            tabObjektov[i]->zanka();
+            tabObjektov[i]->zanka(_shaderProgram, _VAO);
         }
         glfwSwapBuffers(okno);
     }
