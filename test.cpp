@@ -6,17 +6,15 @@
 
 int main()
 {
-    Scena glavna;
+    Okno okno;
     Barva br(0xff0000ff);
-    glavna.nastavi(800, 600, "heheh");
-    glavna.dodajObljekt("jj");
-    glavna.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
-    glavna.poisciObjekt("jj")->poisciKomponento<Upodabljalnik>()->poz();
-
-    glavna.spremeniBarvo(br);
+    okno.nastavi(800, 600, "heheh");
+    okno.dodajObljekt("jj");
+    okno.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
+    okno.spremeniBarvo(br);
     std::cout.flush();
-    while (!glfwWindowShouldClose(glavna.okno))
+    while (!glfwWindowShouldClose(okno.okno))
     {
-        glavna.zanka();
+        okno.zanka();
     }
 }

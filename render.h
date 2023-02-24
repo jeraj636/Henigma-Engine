@@ -1,3 +1,4 @@
+#pragma once
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
 #include "ostalo.h"
@@ -6,99 +7,11 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
-
-class Komponenta
-{
-
-public:
-    virtual void nastavi() = 0;
-    virtual void zanka(uint shaderProgram, uint VAO) = 0;
-    bool aktivno = 1;
-};
-class Upodabljalnik : public Komponenta
+#include "objekt.h"
+class Okno
 {
 public:
-    void nastavi() override
-    {
-        io::izpis("upodabljalnik je nastavljen", io::type::msg);
-    }
-    void zanka(uint shaderProgram, uint VAO) override
-    {
-        glBindVertexArray(VAO);
-        glUseProgram(shaderProgram);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-    }
-};
-class Objekt
-{
-public:
-    Objekt(std::string ime)
-    {
-        _ime = ime;
-    }
-    void nastavi()
-    {
-    }
-    void zanka(uint shaderProgram, uint VAO)
-    {
-        for (int i = 0; i < tabKomponent.size(); i++)
-        {
-            if (tabKomponent[i]->aktivno)
-                tabKomponent[i]->zanka(shaderProgram, VAO);
-        }
-    }
-
-    std::string dobiIme()
-    {
-        return _ime;
-    }
-    template <class T>
-    void dodajKomponento()
-    {
-        tabKomponent.push_back(new T);
-        tabKomponent.back()->nastavi();
-    }
-    template <class T>
-    T *poisciKomponento()
-    {
-        for (int i = 0; i < tabKomponent.size(); i++)
-        {
-            T *kaz = dynamic_cast<T *>(tabKomponent[i]);
-            if (kaz != nullptr)
-                return kaz;
-        }
-        io::izpis("NI TE KOMPONENTE V TEM OBJEKTU", io::type::msg);
-        return nullptr;
-    }
-
-private:
-    std::vector<Komponenta *> tabKomponent;
-    std::string _ime;
-};
-
-class Barva
-{
-public:
-    float r, g, b, a;
-    Barva(int hexCode)
-    {
-        a = hexCode & 0x000000ff;
-        hexCode >>= 8;
-        b = hexCode & 0x0000ff;
-        hexCode >>= 8;
-        g = hexCode & 0x00ff;
-        hexCode >>= 8;
-        r = hexCode & 0xff;
-        a /= 0xff;
-        r /= 0xff;
-        g /= 0xff;
-        b /= 0xff;
-    }
-};
-class Scena
-{
-public:
-    Scena()
+    Okno()
         : _barvaOdzadja(0x00ffffff)
     {
     }
@@ -216,12 +129,12 @@ public:
 
         for (int i = 0; i < tabObjektov.size(); i++)
         {
-            tabObjektov[i]->zanka(_shaderProgram, _VAO);
+            tabObjektov[i]->zanka();
         }
         glfwSwapBuffers(okno);
     }
     GLFWwindow *okno;
-    ~Scena()
+    ~Okno()
     {
         glfwTerminate();
     }
@@ -241,9 +154,9 @@ private:
     static uint _shaderProgram;
 };
 
-uint Scena::_VBO = 0;
-uint Scena::_VAO = 0;
-uint Scena::_EBO = 0;
-uint Scena::_vertexShader = 0;
-uint Scena::_fragmentShader = 0;
-uint Scena::_shaderProgram = 0;
+uint Okno::_VBO = 0;
+uint Okno::_VAO = 0;
+uint Okno::_EBO = 0;
+uint Okno::_vertexShader = 0;
+uint Okno::_fragmentShader = 0;
+uint Okno::_shaderProgram = 0;
