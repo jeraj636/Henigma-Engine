@@ -10,7 +10,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
 #include "objekt.h"
-
+class Objekt;
 class Okno
 {
 public:

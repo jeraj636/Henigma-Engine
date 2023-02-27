@@ -118,7 +118,7 @@ void Okno::zanka()
 
     for (int i = 0; i < tabObjektov.size(); i++)
     {
-        tabObjektov[i]->zanka(_shaderProgram, _VAO);
+        tabObjektov[i]->zanka(_VAO, _shaderProgram);
     }
     glfwSwapBuffers(okno);
 }

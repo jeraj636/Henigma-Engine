@@ -1,5 +1,5 @@
-#ifndef OBJEKT_H
-#define OBJEKT_H
+#pragma once
+#include "objekt.h"
 #include <vector>
 #include "ostalo.h"
 #include "komponenta.h"
@@ -9,30 +9,29 @@ public:
     uint VAO, shaderProgram;
     Objekt(std::string ime);
     void nastavi();
-    void zanka(uint shaderProgram, uint VAO);
+    void zanka(uint _VAO, uint _shaderProgram);
     std::string dobiIme();
-    void poz();
-    template <class T>
+    template <class tipKomponente>
     void dodajKomponento()
     {
-        tabKomponent.push_back(new T);
+        tabKomponent.push_back(new tipKomponente);
         tabKomponent.back()->nastavi();
     }
-    template <class T>
-    T *poisciKomponento()
+    template <class tipKomponente>
+    tipKomponente *poisciKomponento()
     {
         for (int i = 0; i < tabKomponent.size(); i++)
         {
-            T *kaz = dynamic_cast<T *>(tabKomponent[i]);
+            tipKomponente *kaz = dynamic_cast<tipKomponente *>(tabKomponent[i]);
             if (kaz != nullptr)
                 return kaz;
         }
-        io::izpis("NI TE KOMPONENTE V TEM OBJEKTU", io::type::msg);
+        io::izpis("NI KOMPONENTE", io::type::msg);
         return nullptr;
     }
 
 private:
     std::vector<Komponenta *> tabKomponent;
     std::string _ime;
+    Neki nn;
 };
-#endif
