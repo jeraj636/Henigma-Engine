@@ -3,6 +3,7 @@
 #include <vector>
 #include "ostalo.h"
 #include "komponenta.h"
+class Komponenta;
 class Objekt
 {
 public:
@@ -11,11 +12,12 @@ public:
     void nastavi();
     void zanka(uint _VAO, uint _shaderProgram);
     std::string dobiIme();
+    void nstk();
     template <class tipKomponente>
     void dodajKomponento()
     {
         tabKomponent.push_back(new tipKomponente);
-        tabKomponent.back()->nastavi();
+        nstk();
     }
     template <class tipKomponente>
     tipKomponente *poisciKomponento()
@@ -33,5 +35,4 @@ public:
 private:
     std::vector<Komponenta *> tabKomponent;
     std::string _ime;
-    Neki nn;
 };
