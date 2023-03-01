@@ -1,6 +1,6 @@
 // #include "komponenta.h"
 #include "objekt.h"
-#include "komponenta.h"
+#include "../Komponente/komponenta.h"
 Objekt::Objekt(std::string ime)
 {
     VAO = 0;
@@ -9,7 +9,7 @@ Objekt::Objekt(std::string ime)
 }
 void Objekt::nstk()
 {
-    tabKomponent.back()->nastavi();
+    tabKomponent.back()->nastavi(this);
 }
 inline void Objekt::nastavi()
 {
@@ -23,7 +23,7 @@ void Objekt::zanka(uint _VAO, uint _shaderProgram)
         shaderProgram = _shaderProgram;
         VAO = _VAO;
         if (tabKomponent[i]->aktivno)
-            tabKomponent[i]->zanka(this);
+            tabKomponent[i]->zanka();
     }
 }
 std::string Objekt::dobiIme()

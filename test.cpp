@@ -1,9 +1,9 @@
-#include "render.h"
+#include "Render/render.h"
 #include <cmath>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include "upodabljalnik.h"
+#include "Komponente/upodabljalnik.h"
 int main()
 {
     Okno okno;
@@ -12,7 +12,7 @@ int main()
     okno.dodajObljekt("jj");
     // okno.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
     okno.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
-    okno.poisciObjekt("jj")->poisciKomponento<Upodabljalnik>()->aktivno = 0;
+    okno.poisciObjekt("jj")->poisciKomponento<Upodabljalnik>()->aktivno = 1;
 
     std::cout.flush();
     while (!glfwWindowShouldClose(okno.okno))

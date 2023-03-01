@@ -1,8 +1,8 @@
 #pragma once
 #include "objekt.h"
 #include <vector>
-#include "ostalo.h"
-#include "komponenta.h"
+#include "../Ostalo/ostalo.h"
+#include "../Komponente/komponenta.h"
 class Komponenta;
 class Objekt
 {
