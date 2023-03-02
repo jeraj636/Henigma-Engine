@@ -97,17 +97,17 @@ void Okno::spremeniBarvo(Barva barva)
 {
     _barvaOdzadja = barva;
 }
-void Okno::dodajObljekt(const std::string &imeObjekta)
+void Okno::dodajSceno(const std::string &imeScene)
 {
-    tabObjektov.push_back(new Objekt(imeObjekta));
-    tabObjektov.back()->nastavi(this);
+    tabScen.push_back(new Scena(imeScene));
+    tabScen.back()->nastavi(this);
 }
-Objekt *Okno::poisciObjekt(const std::string &imeObjekta)
+Scena *Okno::poisciSceno(const std::string &imeScene)
 {
-    for (int i = 0; i < tabObjektov.size(); i++)
+    for (int i = 0; i < tabScen.size(); i++)
     {
-        if (imeObjekta == tabObjektov[i]->dobiIme())
-            return tabObjektov[i];
+        if (imeScene == tabScen[i]->ime)
+            return tabScen[i];
     }
     return nullptr;
 }
@@ -117,9 +117,9 @@ void Okno::zanka()
     glfwPollEvents();
     glClear(GL_COLOR_BUFFER_BIT);
 
-    for (int i = 0; i < tabObjektov.size(); i++)
+    for (int i = 0; i < tabScen.size(); i++)
     {
-        tabObjektov[i]->zanka();
+        tabScen[i]->zanka();
     }
     glfwSwapBuffers(okno);
 }
@@ -128,12 +128,12 @@ Okno::~Okno()
 {
     glfwTerminate();
 }
-void Okno::unici(Objekt *objekt)
+void Okno::unici(Scena *kateraScena)
 {
-    delete objekt;
+    delete kateraScena;
 }
-std::vector<Objekt *> tabObjektov;
-// Barva Okno::_barvaOdzadja;
+// std::vector<Objekt *> tabObjektov;
+//  Barva Okno::_barvaOdzadja;
 /*static void posodobiVelikostOkna(GLFWwindow *okno, int dolzina, int visina)
 {
     glViewport(0, 0, dolzina, visina);

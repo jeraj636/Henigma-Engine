@@ -9,11 +9,11 @@ int main()
     Okno okno;
     Barva br(0xff0000ff);
     okno.nastavi(800, 600, "heheh");
-    okno.dodajObljekt("jj");
-    // okno.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
-    okno.poisciObjekt("jj")->dodajKomponento<Upodabljalnik>();
-    okno.poisciObjekt("jj")->poisciKomponento<Upodabljalnik>()->aktivno = 1;
 
+    okno.dodajSceno("glavna");
+    Scena *glavna = okno.poisciSceno("glavna");
+    Objekt *jj = glavna->dodajObjekt("jj");
+    jj->dodajKomponento<Upodabljalnik>();
     std::cout.flush();
     while (!glfwWindowShouldClose(okno.okno))
     {

@@ -9,22 +9,24 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
-#include "../Objekt/objekt.h"
-class Objekt;
+// #include "../Objekt/objekt.h"
+//  class Objekt;
+#include "../Objekt/scena.h"
+class Scena;
 class Okno
 {
 public:
     Okno();
-    void unici(Objekt *obj);
+    void unici(Scena *kateraScena);
     void nastavi(int dolzinaOkna, int VisinaOkna, const char *naslovOkna);
     void spremeniBarvo(Barva barva);
-    void dodajObljekt(const std::string &imeObjekta);
-    Objekt *poisciObjekt(const std::string &imeObjekta);
+    void dodajSceno(const std::string &imeScene);
+    Scena *poisciSceno(const std::string &imeScene);
     void zanka();
     GLFWwindow *okno;
     ~Okno();
 
-    std::vector<Objekt *> tabObjektov;
+    std::vector<Scena *> tabScen;
     Barva _barvaOdzadja;
     static void posodobiVelikostOkna(GLFWwindow *okno, int dolzina, int visina)
     {

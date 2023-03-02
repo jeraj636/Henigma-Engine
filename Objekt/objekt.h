@@ -8,11 +8,9 @@ class Okno;
 class Objekt
 {
 public:
-    uint VAO, shaderProgram;
     Objekt(std::string ime);
     void nastavi(Okno *kaz);
     void zanka();
-    std::string dobiIme();
     template <class tipKomponente>
     void dodajKomponento()
     {
@@ -30,12 +28,12 @@ public:
         }
         return nullptr;
     }
-
+    bool aktivno = 1;
     std::vector<Komponenta *> tabKomponent;
     ~Objekt();
+    std::string imeObjekta;
 
 private:
-    std::string _ime;
     Okno *_okno;
     void nstk();
 };
