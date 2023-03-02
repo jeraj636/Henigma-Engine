@@ -4,15 +4,15 @@
 #include "../Ostalo/ostalo.h"
 #include "../Komponente/komponenta.h"
 class Komponenta;
+class Okno;
 class Objekt
 {
 public:
     uint VAO, shaderProgram;
     Objekt(std::string ime);
-    void nastavi();
-    void zanka(uint _VAO, uint _shaderProgram);
+    void nastavi(Okno *kaz);
+    void zanka();
     std::string dobiIme();
-    void nstk();
     template <class tipKomponente>
     void dodajKomponento()
     {
@@ -28,11 +28,14 @@ public:
             if (kaz != nullptr)
                 return kaz;
         }
-        io::izpis("NI KOMPONENTE", io::type::msg);
         return nullptr;
     }
 
-private:
     std::vector<Komponenta *> tabKomponent;
+    ~Objekt();
+
+private:
     std::string _ime;
+    Okno *_okno;
+    void nstk();
 };

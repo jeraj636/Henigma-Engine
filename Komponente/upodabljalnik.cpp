@@ -5,8 +5,9 @@ void Upodabljalnik::zanka()
         glUseProgram(obj->shaderProgram);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
-void Upodabljalnik::nastavi(Objekt *kaz)
+void Upodabljalnik::nastavi(Objekt *kazObj, Okno *kazOkno)
 {
-        obj = kaz;
-        io::izpis("nastavljeno", io::type::msg);
+        obj = kazObj;
+        okno = kazOkno;
+        io::izpis("upodabljalnik je nastavljen", io::type::msg);
 }

@@ -1,6 +1,6 @@
-// #include "komponenta.h"
 #include "objekt.h"
 #include "../Komponente/komponenta.h"
+#include "../Render/render.h"
 Objekt::Objekt(std::string ime)
 {
     VAO = 0;
@@ -9,22 +9,27 @@ Objekt::Objekt(std::string ime)
 }
 void Objekt::nstk()
 {
-    tabKomponent.back()->nastavi(this);
+    tabKomponent.back()->nastavi(this /*nutzz*/, _okno);
 }
-inline void Objekt::nastavi()
+void Objekt::nastavi(Okno *kaz)
 {
+    _okno = kaz;
+    VAO = kaz->_VAO;
+    shaderProgram = kaz->_shaderProgram;
     io::izpis("objekt je nastavljen", io::type::msg);
 }
-void Objekt::zanka(uint _VAO, uint _shaderProgram)
+void Objekt::zanka()
 {
     for (int i = 0; i < tabKomponent.size(); i++)
     {
-
-        shaderProgram = _shaderProgram;
-        VAO = _VAO;
         if (tabKomponent[i]->aktivno)
             tabKomponent[i]->zanka();
     }
+}
+Objekt::~Objekt()
+{
+    for (int i = 0; i < tabKomponent.size(); i++)
+        delete tabKomponent[i];
 }
 std::string Objekt::dobiIme()
 {

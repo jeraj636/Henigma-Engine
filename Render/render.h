@@ -15,6 +15,7 @@ class Okno
 {
 public:
     Okno();
+    void unici(Objekt *obj);
     void nastavi(int dolzinaOkna, int VisinaOkna, const char *naslovOkna);
     void spremeniBarvo(Barva barva);
     void dodajObljekt(const std::string &imeObjekta);

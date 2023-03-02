@@ -100,6 +100,7 @@ void Okno::spremeniBarvo(Barva barva)
 void Okno::dodajObljekt(const std::string &imeObjekta)
 {
     tabObjektov.push_back(new Objekt(imeObjekta));
+    tabObjektov.back()->nastavi(this);
 }
 Objekt *Okno::poisciObjekt(const std::string &imeObjekta)
 {
@@ -118,7 +119,7 @@ void Okno::zanka()
 
     for (int i = 0; i < tabObjektov.size(); i++)
     {
-        tabObjektov[i]->zanka(_VAO, _shaderProgram);
+        tabObjektov[i]->zanka();
     }
     glfwSwapBuffers(okno);
 }
@@ -127,7 +128,10 @@ Okno::~Okno()
 {
     glfwTerminate();
 }
-
+void Okno::unici(Objekt *objekt)
+{
+    delete objekt;
+}
 std::vector<Objekt *> tabObjektov;
 // Barva Okno::_barvaOdzadja;
 /*static void posodobiVelikostOkna(GLFWwindow *okno, int dolzina, int visina)

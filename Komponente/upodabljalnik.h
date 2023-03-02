@@ -4,10 +4,11 @@
 #include <GLFW/glfw3.h>
 #include "komponenta.h"
 #include "../Objekt/objekt.h"
+#include "../Render/render.h"
 class Upodabljalnik : public Komponenta
 {
 
 public:
-        void nastavi(Objekt *obj) override;
+        void nastavi(Objekt *kazObj, Okno *kazOkno) override;
         void zanka() override;
 };
