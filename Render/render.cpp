@@ -1,5 +1,6 @@
 #include "render.h"
-
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 Okno::Okno()
     : _barvaOdzadja(0x00ffffff)
 {
@@ -24,10 +25,10 @@ void Okno::nastavi(int dolzinaOkna, int VisinaOkna, const char *naslovOkna)
 
     float tocke[] =
         {
-            1.0, 1.0, 0.0,
-            1.0, -1.0, 0.0,
-            -1.0, -1.0, 0.0,
-            -1.0, 1.0, 0.0};
+            1.0, 1.0, 0.0, 1, 1,
+            1.0, -1.0, 0.0, 1, 0,
+            -1.0, -1.0, 0.0, 0, 0,
+            -1.0, 1.0, 0.0, 0, 1};
     int indeksi[] =
         {
             0, 1, 2,
@@ -36,22 +37,46 @@ void Okno::nastavi(int dolzinaOkna, int VisinaOkna, const char *naslovOkna)
     const char *vertexShaderS = R"(
             #version 330 core
             layout (location=0) in vec3 aPos;
-            
+            layout (location=1)in vec2 atexCor;
+            out vec2 texCor;
+            uniform mat4 matrica;
             void main()
             {
-                gl_Position=vec4(aPos,1);
+                gl_Position=matrica *vec4(aPos,1);
+                texCor=atexCor;
             }
         )";
     const char *fragmentShaderS = R"(
             #version 330 core
             out vec4 FragColor;
-
+            uniform vec4 barva;
+            uniform sampler2D teks;
+            in vec2 texCor;
             void main() 
             {
-                FragColor = vec4(1.0f, 1.0f, 0.2f, 1.0f);
+               // FragColor = vec4(barva);
+               FragColor=texture(teks,texCor)*vec4(barva);
             } 
 
         )";
+    //*zacetek testure
+
+    glGenTextures(1, &_texture);
+    glBindTexture(GL_TEXTURE_2D, _texture);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    int visina, sirina, barvnoKodiranje;
+    stbi_set_flip_vertically_on_load(true);
+    unsigned char *data = stbi_load("../images.png", &visina, &sirina, &barvnoKodiranje, 0);
+    if (data == nullptr)
+        io::izpis("ni ok", io::type::msg);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, visina, sirina, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    //*konec s teksturami
     glGenVertexArrays(1, &_VAO);
     glBindVertexArray(_VAO);
 
@@ -90,8 +115,10 @@ void Okno::nastavi(int dolzinaOkna, int VisinaOkna, const char *naslovOkna)
     glDeleteShader(_vertexShader);
     glDeleteShader(_fragmentShader);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
+    glEnableVertexAttribArray(1);
 }
 void Okno::spremeniBarvo(Barva barva)
 {
@@ -144,10 +171,11 @@ static uint _EBO;
 static uint _vertexShader;
 static uint _fragmentShader;
 static uint _shaderProgram;
-
+static uint _texture;
 uint Okno::_VBO = 0;
 uint Okno::_VAO = 0;
 uint Okno::_EBO = 0;
 uint Okno::_vertexShader = 0;
 uint Okno::_fragmentShader = 0;
 uint Okno::_shaderProgram = 0;
+uint Okno::_texture = 0;

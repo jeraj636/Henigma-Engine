@@ -23,4 +23,9 @@ namespace io
     void vpis(const char *msg, t &input);
 
 }
+class Vec3
+{
+public:
+    float x, y, z;
+};
 #endif
