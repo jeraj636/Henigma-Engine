@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/a.dir/test.cpp.o CMakeFiles/a.dir/Render/render.cpp.o CMakeFiles/a.dir/Objekt/objekt.cpp.o CMakeFiles/a.dir/Objekt/scena.cpp.o CMakeFiles/a.dir/Komponente/upodabljalnik.cpp.o CMakeFiles/a.dir/Ostalo/ostalo.cpp.o CMakeFiles/a.dir/glad/src/glad.c.o CMakeFiles/a.dir/Komponente/transformacija.cpp.o -o a  -lglfw -lGL -lfmt 
