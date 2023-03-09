@@ -8,9 +8,6 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
-// #include "stb_image.h"
-//  #include "../Objekt/objekt.h"
-//   class Objekt;
 #include "../Objekt/scena.h"
 class Scena;
 class Okno
@@ -38,7 +35,6 @@ public:
     static uint _vertexShader;
     static uint _fragmentShader;
     static uint _shaderProgram;
-    static uint _texture;
 };
 
 #endif

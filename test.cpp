@@ -5,7 +5,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include "Komponente/upodabljalnik.h"
 #include "Komponente/transformacija.h"
-// #define STB_IMAGE_IMPLEMENTATION
+#include "Ostalo/ostalo.h"
 int main()
 {
     Okno okno;
@@ -17,9 +17,13 @@ int main()
     Objekt *jj = glavna->dodajObjekt("jj");
     jj->dodajKomponento<Transformacija>();
     jj->dodajKomponento<Upodabljalnik>();
-    Barva neki(0xffffffff);
+    Barva neki(0x00f0f0ff);
     jj->poisciKomponento<Upodabljalnik>()->barvaObjekta = neki;
+    jj->poisciKomponento<Upodabljalnik>()->tekstura = dodajTeksturo("../wall.jpg");
     std::cout.flush();
+    Transformacija *tr = jj->poisciKomponento<Transformacija>();
+    tr->pozicija.x = 0.5;
+    tr->pozicija.y = 0.5;
     while (!glfwWindowShouldClose(okno.okno))
     {
         okno.zanka();

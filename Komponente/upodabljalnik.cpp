@@ -2,7 +2,7 @@
 void Upodabljalnik::zanka()
 {
         glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, okno->_texture);
+        glBindTexture(GL_TEXTURE_2D, tekstura);
         glUniform1i(_lokacijaTeksture, 0);
         glUniform4f(_lokacijaBarve, barvaObjekta.r, barvaObjekta.g, barvaObjekta.b, barvaObjekta.a);
         glBindVertexArray(okno->_VAO);

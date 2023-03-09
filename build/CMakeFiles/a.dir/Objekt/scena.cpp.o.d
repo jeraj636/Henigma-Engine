@@ -184,5 +184,10 @@ CMakeFiles/a.dir/Objekt/scena.cpp.o: \
  /usr/include/c++/12.2.1/bits/basic_ios.tcc \
  /usr/include/c++/12.2.1/bits/ostream.tcc /usr/include/c++/12.2.1/istream \
  /usr/include/c++/12.2.1/bits/istream.tcc \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
+ /usr/include/GLFW/glfw3.h \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/../Ostalo/../Render/stb_image.h \
+ /usr/include/c++/12.2.1/stdlib.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/../Komponente/komponenta.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/../Komponente/../Ostalo/ostalo.h

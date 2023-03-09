@@ -13,6 +13,7 @@ public:
         void zanka() override;
         Barva barvaObjekta;
         Upodabljalnik();
+        uint tekstura;
 
 private:
         int _lokacijaBarve;

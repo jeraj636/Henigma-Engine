@@ -244,6 +244,8 @@ CMakeFiles/a.dir/Komponente/transformacija.cpp.o: /home/jakob/Documents/C_CPP/He
   /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
   /usr/include/GLFW/glfw3.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/stdlib.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/objekt.h \
   /usr/include/c++/12.2.1/vector \
@@ -696,6 +698,8 @@ CMakeFiles/a.dir/Komponente/upodabljalnik.cpp.o: /home/jakob/Documents/C_CPP/Hen
   /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
   /usr/include/GLFW/glfw3.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/stdlib.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/objekt.h \
   /usr/include/c++/12.2.1/vector \
@@ -1149,12 +1153,14 @@ CMakeFiles/a.dir/Objekt/objekt.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
-  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
-  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
-  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
   /usr/include/GLFW/glfw3.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/stdlib.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
   /usr/include/glm/glm.hpp \
   /usr/include/glm/detail/_fixes.hpp \
@@ -1601,6 +1607,11 @@ CMakeFiles/a.dir/Objekt/scena.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
+  /usr/include/GLFW/glfw3.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/stdlib.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
 
@@ -1842,7 +1853,12 @@ CMakeFiles/a.dir/Ostalo/ostalo.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine
   /usr/include/c++/12.2.1/bits/basic_ios.tcc \
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
-  /usr/include/c++/12.2.1/bits/istream.tcc
+  /usr/include/c++/12.2.1/bits/istream.tcc \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
+  /usr/include/GLFW/glfw3.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/stdlib.h
 
 CMakeFiles/a.dir/Render/render.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.cpp \
   /usr/include/stdc-predef.h \
@@ -2087,6 +2103,8 @@ CMakeFiles/a.dir/Render/render.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/stdlib.h \
   /usr/include/glm/glm.hpp \
   /usr/include/glm/detail/_fixes.hpp \
   /usr/include/glm/detail/setup.hpp \
@@ -2293,7 +2311,13 @@ CMakeFiles/a.dir/Render/render.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine
   /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/objekt.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
-  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/math.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mm_malloc.h
 
 CMakeFiles/a.dir/glad/src/glad.c.o: /home/jakob/Documents/C_CPP/Henigma-Engine/glad/src/glad.c \
   /usr/include/stdc-predef.h \
@@ -2605,6 +2629,8 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
   /usr/include/c++/12.2.1/bits/ostream.tcc \
   /usr/include/c++/12.2.1/istream \
   /usr/include/c++/12.2.1/bits/istream.tcc \
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h \
+  /usr/include/c++/12.2.1/stdlib.h \
   /usr/include/glm/glm.hpp \
   /usr/include/glm/detail/_fixes.hpp \
   /usr/include/glm/detail/setup.hpp \
@@ -2816,24 +2842,16 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
   /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.h \
   /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/transformacija.h \
-  /home/jakob/Documents/C_CPP/Henigma-Engine/stb_image.h \
-  /usr/include/c++/12.2.1/stdlib.h \
-  /home/jakob/Documents/C_CPP/Henigma-Engine/tekstura.h \
-  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
-  /usr/include/c++/12.2.1/math.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/xmmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mm_malloc.h
+  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
 
+
+/home/jakob/Documents/C_CPP/Henigma-Engine/glad/src/glad.c:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mmintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/emmintrin.h:
 
 /usr/include/c++/12.2.1/math.h:
-
-/home/jakob/Documents/C_CPP/Henigma-Engine/glad/src/glad.c:
 
 /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/scena.cpp:
 
@@ -3080,6 +3098,14 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
 /usr/include/bits/posix2_lim.h:
 
 /usr/include/linux/limits.h:
+
+/usr/include/glm/ext/vector_uint2_sized.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/syslimits.h:
+
+/usr/include/glm/detail/type_vec4.inl:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/limits.h:
 
 /usr/include/c++/12.2.1/backward/binders.h:
 
@@ -3389,8 +3415,6 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
 
 /usr/include/fmt/core.h:
 
-/home/jakob/Documents/C_CPP/Henigma-Engine/tekstura.h:
-
 /usr/include/features.h:
 
 /usr/include/bits/types/__FILE.h:
@@ -3406,8 +3430,6 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
 /usr/include/c++/12.2.1/bits/stl_iterator.h:
 
 /usr/include/sys/types.h:
-
-/home/jakob/Documents/C_CPP/Henigma-Engine/stb_image.h:
 
 /usr/include/glm/ext/vector_float1.hpp:
 
@@ -3490,10 +3512,6 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
 /usr/include/c++/12.2.1/bits/postypes.h:
 
 /usr/include/bits/types/__locale_t.h:
-
-/usr/include/glm/detail/type_vec4.inl:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/limits.h:
 
 /usr/include/bits/typesizes.h:
 
@@ -3737,6 +3755,8 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
 
 /usr/include/c++/12.2.1/bits/basic_ios.tcc:
 
+/home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h:
+
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /usr/include/c++/12.2.1/bits/vector.tcc:
@@ -3748,7 +3768,3 @@ CMakeFiles/a.dir/test.cpp.o: /home/jakob/Documents/C_CPP/Henigma-Engine/test.cpp
 /usr/include/glm/ext/vector_int3_sized.hpp:
 
 /usr/include/assert.h:
-
-/usr/include/glm/ext/vector_uint2_sized.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/syslimits.h:

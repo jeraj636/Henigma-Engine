@@ -59,24 +59,7 @@ void Okno::nastavi(int dolzinaOkna, int VisinaOkna, const char *naslovOkna)
             } 
 
         )";
-    //*zacetek testure
 
-    glGenTextures(1, &_texture);
-    glBindTexture(GL_TEXTURE_2D, _texture);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    int visina, sirina, barvnoKodiranje;
-    stbi_set_flip_vertically_on_load(true);
-    unsigned char *data = stbi_load("../images.png", &visina, &sirina, &barvnoKodiranje, 0);
-    if (data == nullptr)
-        io::izpis("ni ok", io::type::msg);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, visina, sirina, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-    //*konec s teksturami
     glGenVertexArrays(1, &_VAO);
     glBindVertexArray(_VAO);
 
@@ -150,7 +133,6 @@ void Okno::zanka()
     }
     glfwSwapBuffers(okno);
 }
-// GLFWwindow *Okno::okno = 0;
 Okno::~Okno()
 {
     glfwTerminate();
@@ -159,12 +141,7 @@ void Okno::unici(Scena *kateraScena)
 {
     delete kateraScena;
 }
-// std::vector<Objekt *> tabObjektov;
-//  Barva Okno::_barvaOdzadja;
-/*static void posodobiVelikostOkna(GLFWwindow *okno, int dolzina, int visina)
-{
-    glViewport(0, 0, dolzina, visina);
-}*/
+
 static uint _VBO;
 static uint _VAO;
 static uint _EBO;
@@ -178,4 +155,3 @@ uint Okno::_EBO = 0;
 uint Okno::_vertexShader = 0;
 uint Okno::_fragmentShader = 0;
 uint Okno::_shaderProgram = 0;
-uint Okno::_texture = 0;

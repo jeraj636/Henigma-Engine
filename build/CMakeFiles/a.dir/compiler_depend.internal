@@ -245,6 +245,8 @@ CMakeFiles/a.dir/Komponente/transformacija.cpp.o
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h
  /usr/include/GLFW/glfw3.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/stdlib.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/objekt.h
  /usr/include/c++/12.2.1/vector
@@ -698,6 +700,8 @@ CMakeFiles/a.dir/Komponente/upodabljalnik.cpp.o
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h
  /usr/include/GLFW/glfw3.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/stdlib.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Objekt/objekt.h
  /usr/include/c++/12.2.1/vector
@@ -1152,12 +1156,14 @@ CMakeFiles/a.dir/Objekt/objekt.cpp.o
  /usr/include/c++/12.2.1/bits/ostream.tcc
  /usr/include/c++/12.2.1/istream
  /usr/include/c++/12.2.1/bits/istream.tcc
- /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h
- /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
- /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h
  /usr/include/GLFW/glfw3.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/stdlib.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
  /usr/include/glm/glm.hpp
  /usr/include/glm/detail/_fixes.hpp
@@ -1605,6 +1611,11 @@ CMakeFiles/a.dir/Objekt/scena.cpp.o
  /usr/include/c++/12.2.1/bits/ostream.tcc
  /usr/include/c++/12.2.1/istream
  /usr/include/c++/12.2.1/bits/istream.tcc
+ /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h
+ /usr/include/GLFW/glfw3.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/stdlib.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
 
@@ -1848,6 +1859,11 @@ CMakeFiles/a.dir/Ostalo/ostalo.cpp.o
  /usr/include/c++/12.2.1/bits/ostream.tcc
  /usr/include/c++/12.2.1/istream
  /usr/include/c++/12.2.1/bits/istream.tcc
+ /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h
+ /usr/include/GLFW/glfw3.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/stdlib.h
 
 CMakeFiles/a.dir/Render/render.cpp.o
  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.cpp
@@ -2093,6 +2109,8 @@ CMakeFiles/a.dir/Render/render.cpp.o
  /usr/include/c++/12.2.1/bits/ostream.tcc
  /usr/include/c++/12.2.1/istream
  /usr/include/c++/12.2.1/bits/istream.tcc
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/stdlib.h
  /usr/include/glm/glm.hpp
  /usr/include/glm/detail/_fixes.hpp
  /usr/include/glm/detail/setup.hpp
@@ -2300,6 +2318,12 @@ CMakeFiles/a.dir/Render/render.cpp.o
  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/math.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/emmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/xmmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mm_malloc.h
 
 CMakeFiles/a.dir/glad/src/glad.c.o
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/src/glad.c
@@ -2613,6 +2637,8 @@ CMakeFiles/a.dir/test.cpp.o
  /usr/include/c++/12.2.1/bits/ostream.tcc
  /usr/include/c++/12.2.1/istream
  /usr/include/c++/12.2.1/bits/istream.tcc
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/stb_image.h
+ /usr/include/c++/12.2.1/stdlib.h
  /usr/include/glm/glm.hpp
  /usr/include/glm/detail/_fixes.hpp
  /usr/include/glm/detail/setup.hpp
@@ -2824,13 +2850,5 @@ CMakeFiles/a.dir/test.cpp.o
  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Render/render.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/transformacija.h
- /home/jakob/Documents/C_CPP/Henigma-Engine/stb_image.h
- /usr/include/c++/12.2.1/stdlib.h
- /home/jakob/Documents/C_CPP/Henigma-Engine/tekstura.h
  /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
- /usr/include/c++/12.2.1/math.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/emmintrin.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/xmmintrin.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mmintrin.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mm_malloc.h
 

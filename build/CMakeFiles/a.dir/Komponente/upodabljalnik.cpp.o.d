@@ -183,6 +183,8 @@ CMakeFiles/a.dir/Komponente/upodabljalnik.cpp.o: \
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/glad/glad.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
  /usr/include/GLFW/glfw3.h \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Ostalo/../Render/stb_image.h \
+ /usr/include/c++/12.2.1/stdlib.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Objekt/objekt.h \
  /usr/include/c++/12.2.1/vector /usr/include/c++/12.2.1/bits/stl_vector.h \

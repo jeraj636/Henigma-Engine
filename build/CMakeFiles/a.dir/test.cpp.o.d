@@ -180,7 +180,9 @@ CMakeFiles/a.dir/test.cpp.o: \
  /usr/include/c++/12.2.1/bits/locale_facets.tcc \
  /usr/include/c++/12.2.1/bits/basic_ios.tcc \
  /usr/include/c++/12.2.1/bits/ostream.tcc /usr/include/c++/12.2.1/istream \
- /usr/include/c++/12.2.1/bits/istream.tcc /usr/include/glm/glm.hpp \
+ /usr/include/c++/12.2.1/bits/istream.tcc \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/../Ostalo/../Render/stb_image.h \
+ /usr/include/c++/12.2.1/stdlib.h /usr/include/glm/glm.hpp \
  /usr/include/glm/detail/_fixes.hpp /usr/include/glm/detail/setup.hpp \
  /usr/include/c++/12.2.1/cassert /usr/include/assert.h \
  /usr/include/glm/simd/platform.h /usr/include/c++/12.2.1/climits \
@@ -359,12 +361,4 @@ CMakeFiles/a.dir/test.cpp.o: \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Ostalo/ostalo.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Render/render.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/transformacija.h \
- /home/jakob/Documents/C_CPP/Henigma-Engine/stb_image.h \
- /usr/include/c++/12.2.1/stdlib.h \
- /home/jakob/Documents/C_CPP/Henigma-Engine/tekstura.h \
- /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h \
- /usr/include/c++/12.2.1/math.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/emmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/mm_malloc.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h
