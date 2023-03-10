@@ -22,9 +22,11 @@ public:
 
 private:
         uint _lokMatrice;
-        /*
-         glm::mat4 Mpoz;
-         glm::mat4 Mvel;
-         glm::mat4 Mrot;
-         */
+        uint _lokMpozicije;
+        uint _lokMrotacije;
+        uint _lokMvelikost;
+
+        glm::mat4 Mpozicija;
+        glm::mat4 Mvelikost;
+        glm::mat4 Mrotacija;
 };

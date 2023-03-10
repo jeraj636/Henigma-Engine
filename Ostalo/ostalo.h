@@ -61,6 +61,7 @@ static uint dodajTeksturo(const char *imeDatoteke)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     int dolzina, visina, kanali;
+    stbi_set_flip_vertically_on_load(1);
     u_char *data = stbi_load(imeDatoteke, &dolzina, &visina, &kanali, STBI_rgb_alpha);
     if (data != NULL)
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, dolzina, visina, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);

@@ -39,10 +39,12 @@ void Okno::nastavi(int dolzinaOkna, int VisinaOkna, const char *naslovOkna)
             layout (location=0) in vec3 aPos;
             layout (location=1)in vec2 atexCor;
             out vec2 texCor;
-            uniform mat4 matrica;
+            uniform mat4 Mpoz;
+            uniform mat4 Mrot;
+            uniform mat4 Mvel;
             void main()
             {
-                gl_Position=matrica *vec4(aPos,1);
+                gl_Position=Mvel  * Mpoz* Mrot * vec4(aPos,1);
                 texCor=atexCor;
             }
         )";
