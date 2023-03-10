@@ -6,6 +6,7 @@
 #include "Komponente/upodabljalnik.h"
 #include "Komponente/transformacija.h"
 #include "Ostalo/ostalo.h"
+
 int main()
 {
     Okno okno;

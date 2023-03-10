@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HenigmaEngine
+# Target rules for targets named a
 
 # Build rule for target.
-HenigmaEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HenigmaEngine
-.PHONY : HenigmaEngine
+a : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a
+.PHONY : a
 
 # fast build rule for target.
-HenigmaEngine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/build
-.PHONY : HenigmaEngine/fast
+a/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
+.PHONY : a/fast
 
 Komponente/transformacija.o: Komponente/transformacija.cpp.o
 .PHONY : Komponente/transformacija.o
 
 # target to build an object file
 Komponente/transformacija.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Komponente/transformacija.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Komponente/transformacija.cpp.o
 .PHONY : Komponente/transformacija.cpp.o
 
 Komponente/transformacija.i: Komponente/transformacija.cpp.i
@@ -142,7 +142,7 @@ Komponente/transformacija.i: Komponente/transformacija.cpp.i
 
 # target to preprocess a source file
 Komponente/transformacija.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Komponente/transformacija.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Komponente/transformacija.cpp.i
 .PHONY : Komponente/transformacija.cpp.i
 
 Komponente/transformacija.s: Komponente/transformacija.cpp.s
@@ -150,7 +150,7 @@ Komponente/transformacija.s: Komponente/transformacija.cpp.s
 
 # target to generate assembly for a file
 Komponente/transformacija.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Komponente/transformacija.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Komponente/transformacija.cpp.s
 .PHONY : Komponente/transformacija.cpp.s
 
 Komponente/upodabljalnik.o: Komponente/upodabljalnik.cpp.o
@@ -158,7 +158,7 @@ Komponente/upodabljalnik.o: Komponente/upodabljalnik.cpp.o
 
 # target to build an object file
 Komponente/upodabljalnik.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Komponente/upodabljalnik.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Komponente/upodabljalnik.cpp.o
 .PHONY : Komponente/upodabljalnik.cpp.o
 
 Komponente/upodabljalnik.i: Komponente/upodabljalnik.cpp.i
@@ -166,7 +166,7 @@ Komponente/upodabljalnik.i: Komponente/upodabljalnik.cpp.i
 
 # target to preprocess a source file
 Komponente/upodabljalnik.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Komponente/upodabljalnik.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Komponente/upodabljalnik.cpp.i
 .PHONY : Komponente/upodabljalnik.cpp.i
 
 Komponente/upodabljalnik.s: Komponente/upodabljalnik.cpp.s
@@ -174,7 +174,7 @@ Komponente/upodabljalnik.s: Komponente/upodabljalnik.cpp.s
 
 # target to generate assembly for a file
 Komponente/upodabljalnik.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Komponente/upodabljalnik.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Komponente/upodabljalnik.cpp.s
 .PHONY : Komponente/upodabljalnik.cpp.s
 
 Objekt/objekt.o: Objekt/objekt.cpp.o
@@ -182,7 +182,7 @@ Objekt/objekt.o: Objekt/objekt.cpp.o
 
 # target to build an object file
 Objekt/objekt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Objekt/objekt.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Objekt/objekt.cpp.o
 .PHONY : Objekt/objekt.cpp.o
 
 Objekt/objekt.i: Objekt/objekt.cpp.i
@@ -190,7 +190,7 @@ Objekt/objekt.i: Objekt/objekt.cpp.i
 
 # target to preprocess a source file
 Objekt/objekt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Objekt/objekt.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Objekt/objekt.cpp.i
 .PHONY : Objekt/objekt.cpp.i
 
 Objekt/objekt.s: Objekt/objekt.cpp.s
@@ -198,7 +198,7 @@ Objekt/objekt.s: Objekt/objekt.cpp.s
 
 # target to generate assembly for a file
 Objekt/objekt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Objekt/objekt.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Objekt/objekt.cpp.s
 .PHONY : Objekt/objekt.cpp.s
 
 Objekt/scena.o: Objekt/scena.cpp.o
@@ -206,7 +206,7 @@ Objekt/scena.o: Objekt/scena.cpp.o
 
 # target to build an object file
 Objekt/scena.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Objekt/scena.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Objekt/scena.cpp.o
 .PHONY : Objekt/scena.cpp.o
 
 Objekt/scena.i: Objekt/scena.cpp.i
@@ -214,7 +214,7 @@ Objekt/scena.i: Objekt/scena.cpp.i
 
 # target to preprocess a source file
 Objekt/scena.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Objekt/scena.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Objekt/scena.cpp.i
 .PHONY : Objekt/scena.cpp.i
 
 Objekt/scena.s: Objekt/scena.cpp.s
@@ -222,7 +222,7 @@ Objekt/scena.s: Objekt/scena.cpp.s
 
 # target to generate assembly for a file
 Objekt/scena.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Objekt/scena.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Objekt/scena.cpp.s
 .PHONY : Objekt/scena.cpp.s
 
 Ostalo/ostalo.o: Ostalo/ostalo.cpp.o
@@ -230,7 +230,7 @@ Ostalo/ostalo.o: Ostalo/ostalo.cpp.o
 
 # target to build an object file
 Ostalo/ostalo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Ostalo/ostalo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Ostalo/ostalo.cpp.o
 .PHONY : Ostalo/ostalo.cpp.o
 
 Ostalo/ostalo.i: Ostalo/ostalo.cpp.i
@@ -238,7 +238,7 @@ Ostalo/ostalo.i: Ostalo/ostalo.cpp.i
 
 # target to preprocess a source file
 Ostalo/ostalo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Ostalo/ostalo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Ostalo/ostalo.cpp.i
 .PHONY : Ostalo/ostalo.cpp.i
 
 Ostalo/ostalo.s: Ostalo/ostalo.cpp.s
@@ -246,7 +246,7 @@ Ostalo/ostalo.s: Ostalo/ostalo.cpp.s
 
 # target to generate assembly for a file
 Ostalo/ostalo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Ostalo/ostalo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Ostalo/ostalo.cpp.s
 .PHONY : Ostalo/ostalo.cpp.s
 
 Render/render.o: Render/render.cpp.o
@@ -254,7 +254,7 @@ Render/render.o: Render/render.cpp.o
 
 # target to build an object file
 Render/render.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Render/render.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Render/render.cpp.o
 .PHONY : Render/render.cpp.o
 
 Render/render.i: Render/render.cpp.i
@@ -262,7 +262,7 @@ Render/render.i: Render/render.cpp.i
 
 # target to preprocess a source file
 Render/render.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Render/render.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Render/render.cpp.i
 .PHONY : Render/render.cpp.i
 
 Render/render.s: Render/render.cpp.s
@@ -270,7 +270,7 @@ Render/render.s: Render/render.cpp.s
 
 # target to generate assembly for a file
 Render/render.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/Render/render.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/Render/render.cpp.s
 .PHONY : Render/render.cpp.s
 
 glad/src/glad.o: glad/src/glad.c.o
@@ -278,7 +278,7 @@ glad/src/glad.o: glad/src/glad.c.o
 
 # target to build an object file
 glad/src/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/glad/src/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/glad/src/glad.c.o
 .PHONY : glad/src/glad.c.o
 
 glad/src/glad.i: glad/src/glad.c.i
@@ -286,7 +286,7 @@ glad/src/glad.i: glad/src/glad.c.i
 
 # target to preprocess a source file
 glad/src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/glad/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/glad/src/glad.c.i
 .PHONY : glad/src/glad.c.i
 
 glad/src/glad.s: glad/src/glad.c.s
@@ -294,7 +294,7 @@ glad/src/glad.s: glad/src/glad.c.s
 
 # target to generate assembly for a file
 glad/src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/glad/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
 
 test.o: test.cpp.o
@@ -302,7 +302,7 @@ test.o: test.cpp.o
 
 # target to build an object file
 test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -310,7 +310,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -318,7 +318,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HenigmaEngine.dir/build.make CMakeFiles/HenigmaEngine.dir/test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -329,7 +329,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... HenigmaEngine"
+	@echo "... a"
 	@echo "... Komponente/transformacija.o"
 	@echo "... Komponente/transformacija.i"
 	@echo "... Komponente/transformacija.s"

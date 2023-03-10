@@ -41,6 +41,11 @@ public:
 
 static uint dodajTeksturo(const char *imeDatoteke)
 {
+    //*tukaj je bil Jakob
+    //! program mu ni delal in bil je jezen
+    //?jezil se je na prevajalnik in na cmake
+    // udarjal je po mizi
+    //*ves ta cas je bil glavni krivec napake git
     uint tekstura;
     glGenTextures(1, &tekstura);
     glBindTexture(GL_TEXTURE_2D, tekstura);
