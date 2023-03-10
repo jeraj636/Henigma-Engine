@@ -17,7 +17,7 @@ int main()
     Objekt *jj = glavna->dodajObjekt("jj");
     jj->dodajKomponento<Transformacija>();
     jj->dodajKomponento<Upodabljalnik>();
-    Barva neki(0x00f0f0ff);
+    Barva neki(0xff0000ff);
     jj->poisciKomponento<Upodabljalnik>()->barvaObjekta = neki;
     jj->poisciKomponento<Upodabljalnik>()->tekstura = dodajTeksturo("../wall.jpg");
     std::cout.flush();

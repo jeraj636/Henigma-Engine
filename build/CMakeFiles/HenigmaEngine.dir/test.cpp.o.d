@@ -180,7 +180,9 @@ CMakeFiles/HenigmaEngine.dir/test.cpp.o: \
  /usr/include/c++/12.2.1/bits/locale_facets.tcc \
  /usr/include/c++/12.2.1/bits/basic_ios.tcc \
  /usr/include/c++/12.2.1/bits/ostream.tcc /usr/include/c++/12.2.1/istream \
- /usr/include/c++/12.2.1/bits/istream.tcc /usr/include/glm/glm.hpp \
+ /usr/include/c++/12.2.1/bits/istream.tcc \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Render/../Ostalo/../Render/stb_image.h \
+ /usr/include/c++/12.2.1/stdlib.h /usr/include/glm/glm.hpp \
  /usr/include/glm/detail/_fixes.hpp /usr/include/glm/detail/setup.hpp \
  /usr/include/c++/12.2.1/cassert /usr/include/assert.h \
  /usr/include/glm/simd/platform.h /usr/include/c++/12.2.1/climits \
@@ -358,4 +360,5 @@ CMakeFiles/HenigmaEngine.dir/test.cpp.o: \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/upodabljalnik.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Ostalo/ostalo.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Render/render.h \
- /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/transformacija.h
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/transformacija.h \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Ostalo/ostalo.h

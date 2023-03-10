@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(HenigmaEngine)
+project(a)
 
 add_executable(${PROJECT_NAME}
         test.cpp
@@ -14,7 +14,7 @@ add_executable(${PROJECT_NAME}
         
 )
 
-include_directories(HenigmaEngine
+include_directories(${PROJECT_NAME}
         glad/include/
 
 )
