@@ -46,6 +46,10 @@ static uint dodajTeksturo(const char *imeDatoteke)
     //?jezil se je na prevajalnik in na cmake
     // udarjal je po mizi
     //*ves ta cas je bil glavni krivec napake git
+
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     uint tekstura;
     glGenTextures(1, &tekstura);
     glBindTexture(GL_TEXTURE_2D, tekstura);
@@ -57,9 +61,9 @@ static uint dodajTeksturo(const char *imeDatoteke)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     int dolzina, visina, kanali;
-    u_char *data = stbi_load(imeDatoteke, &dolzina, &visina, &kanali, 0);
+    u_char *data = stbi_load(imeDatoteke, &dolzina, &visina, &kanali, STBI_rgb_alpha);
     if (data != NULL)
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, dolzina, visina, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, dolzina, visina, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
     return tekstura;
 }
 

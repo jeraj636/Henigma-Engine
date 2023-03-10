@@ -20,11 +20,11 @@ int main()
     jj->dodajKomponento<Upodabljalnik>();
     Barva neki(0xff0000ff);
     jj->poisciKomponento<Upodabljalnik>()->barvaObjekta = neki;
-    jj->poisciKomponento<Upodabljalnik>()->tekstura = dodajTeksturo("../wall.jpg");
+    jj->poisciKomponento<Upodabljalnik>()->tekstura = dodajTeksturo("../images.png");
     std::cout.flush();
     Transformacija *tr = jj->poisciKomponento<Transformacija>();
-    tr->pozicija.x = 0.5;
-    tr->pozicija.y = 0.5;
+    tr->pozicija.x = 0;
+    tr->pozicija.y = 0;
     while (!glfwWindowShouldClose(okno.okno))
     {
         okno.zanka();
