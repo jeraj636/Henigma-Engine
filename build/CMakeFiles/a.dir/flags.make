@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/jakob/Documents/C_CPP/Henigma-Engine/a -I/home/jakob/Documents/C_CPP/Henigma-Engine/glad/include
+C_INCLUDES = -I/home/jakob/Documents/C_CPP/Henigma-Engine/a -I/home/jakob/Documents/C_CPP/Henigma-Engine/glad/include -I/usr/include/freetype2
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jakob/Documents/C_CPP/Henigma-Engine/a -I/home/jakob/Documents/C_CPP/Henigma-Engine/glad/include
+CXX_INCLUDES = -I/home/jakob/Documents/C_CPP/Henigma-Engine/a -I/home/jakob/Documents/C_CPP/Henigma-Engine/glad/include -I/usr/include/freetype2
 
 CXX_FLAGS = 
 

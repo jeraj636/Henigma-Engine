@@ -9,6 +9,15 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <vector>
+#include <string>
+#include <freetype2/freetype/config/ftheader.h>
+#include <freetype2/ft2build.h>
+/*
+naredil sem da naloi posamezne glife v classu Pisava kot tip Znak
+obtical sem na 7 strani sklopa mojih skript to sem napisal dne 11. 3. 2023
+*/
+#include FT_FREETYPE_H
 class Barva
 {
 public:
@@ -43,9 +52,46 @@ public:
 class Znak
 {
 public:
-    uint ID;
+    uint IDTekstura;
+    glm::vec2 velikos;
+    glm::vec2 zamik;
+    uint zamikNaslednjega;
+};
+class Pisava
+{
+
+public:
+    std::vector<Znak *> tabZnakov;
+    Pisava(const char *potDoPisave, int velikost)
+    {
+        if (FT_Init_FreeType(&_ft))
+            io::izpis("ni ok", io::type::error);
+        if (FT_New_Face(_ft, potDoPisave, 0, &_face))
+            io::izpis("ni obraza", io::type::error);
+        FT_Set_Pixel_Sizes(_face, 0, velikost);
+        for (u_char c = 0; c < 128; c++)
+        {
+            if (FT_Load_Char(_face, c, FT_LOAD_RENDER))
+                continue;
+            uint tekstura;
+            glGenTextures(1, &tekstura);
+            glBindTexture(GL_TEXTURE_2D, tekstura);
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, _face->glyph->bitmap.width, _face->glyph->bitmap.rows, 0, GL_RED, GL_UNSIGNED_BYTE, _face->glyph->bitmap.buffer);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+            tabZnakov.push_back(new Znak);
+            tabZnakov.back()->IDTekstura = tekstura;
+            tabZnakov.back()->velikos = glm::vec2(_face->glyph->bitmap.width, _face->glyph->bitmap.rows);
+            tabZnakov.back()->zamik = glm::vec2(_face->glyph->bitmap_left, _face->glyph->bitmap_top);
+            tabZnakov.back()->zamikNaslednjega = _face->glyph->advance.x;
+        }
+    }
 
 private:
+    FT_Library _ft;
+    FT_Face _face;
 };
 static uint dodajTeksturo(const char *imeDatoteke)
 {

@@ -184,17 +184,10 @@ CMakeFiles/a.dir/Komponente/transformacija.cpp.o: \
  /home/jakob/Documents/C_CPP/Henigma-Engine/glad/include/KHR/khrplatform.h \
  /usr/include/GLFW/glfw3.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Ostalo/../Render/stb_image.h \
- /usr/include/c++/12.2.1/stdlib.h \
- /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
- /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Objekt/objekt.h \
- /usr/include/c++/12.2.1/vector /usr/include/c++/12.2.1/bits/stl_vector.h \
- /usr/include/c++/12.2.1/bits/stl_bvector.h \
- /usr/include/c++/12.2.1/bits/vector.tcc \
- /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Objekt/../Ostalo/ostalo.h \
- /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/c++/12.2.1/cassert \
- /usr/include/assert.h /usr/include/glm/simd/platform.h \
- /usr/include/c++/12.2.1/climits \
+ /usr/include/c++/12.2.1/stdlib.h /usr/include/glm/glm.hpp \
+ /usr/include/glm/detail/_fixes.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/c++/12.2.1/cassert /usr/include/assert.h \
+ /usr/include/glm/simd/platform.h /usr/include/c++/12.2.1/climits \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
@@ -357,7 +350,30 @@ CMakeFiles/a.dir/Komponente/transformacija.cpp.o: \
  /usr/include/glm/ext/vector_int1_sized.hpp \
  /usr/include/glm/ext/vector_uint1.hpp \
  /usr/include/glm/ext/vector_uint1_sized.hpp \
- /usr/include/glm/gtc/type_ptr.inl \
+ /usr/include/glm/gtc/type_ptr.inl /usr/include/c++/12.2.1/vector \
+ /usr/include/c++/12.2.1/bits/stl_vector.h \
+ /usr/include/c++/12.2.1/bits/stl_bvector.h \
+ /usr/include/c++/12.2.1/bits/vector.tcc \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h /usr/include/setjmp.h \
+ /usr/include/freetype2/freetype/config/integer-types.h \
+ /usr/include/freetype2/freetype/config/public-macros.h \
+ /usr/include/freetype2/freetype/config/mac-support.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/komponenta.h \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Objekt/objekt.h \
+ /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Objekt/../Ostalo/ostalo.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Render/render.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Render/../Ostalo/ostalo.h \
  /home/jakob/Documents/C_CPP/Henigma-Engine/Komponente/../Render/../Objekt/scena.h

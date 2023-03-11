@@ -12,7 +12,7 @@ int main()
     Okno okno;
     Barva br(0xff0000ff);
     okno.nastavi(800, 600, "heheh");
-
+    Pisava pis("../font.ttf", 69);
     okno.dodajSceno("glavna");
     Scena *glavna = okno.poisciSceno("glavna");
     Objekt *jj = glavna->dodajObjekt("jj");

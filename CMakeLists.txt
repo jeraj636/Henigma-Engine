@@ -23,4 +23,13 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
         glfw
         GL 
         fmt 
+        freetype
 )
+
+set(FREETYPE_INCLUDE_DIRS "/usr/include/freetype2")
+set(FREETYPE_LIBRARIES "/usr/lib/x86_64-linux-gnu/libfreetype.so")
+
+set(FREETYPE_DIR "/usr/include/freetype2")
+include_directories(${FREETYPE_DIR})
+
+

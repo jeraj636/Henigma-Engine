@@ -7,13 +7,13 @@
 #include "../Render/render.h"
 #include <vector>
 #include <string>
-class Pisava : public Komponenta
+class Tekst : public Komponenta
 {
 
 public:
     void nastavi(Objekt *kazObj, Okno *kazOkno) override;
     void zanka() override;
-    Pisava();
+    Tekst();
 
 private:
 };
