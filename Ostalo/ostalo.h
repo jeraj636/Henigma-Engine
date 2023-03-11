@@ -6,7 +6,9 @@
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
 #include "../Render/stb_image.h"
-
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 class Barva
 {
 public:
@@ -38,7 +40,13 @@ public:
         z = 1;
     }
 };
+class Znak
+{
+public:
+    uint ID;
 
+private:
+};
 static uint dodajTeksturo(const char *imeDatoteke)
 {
     //*tukaj je bil Jakob

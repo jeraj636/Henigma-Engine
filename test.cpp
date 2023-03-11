@@ -25,7 +25,6 @@ int main()
     Transformacija *tr = jj->poisciKomponento<Transformacija>();
     tr->pozicija.x = 0;
     tr->pozicija.y = 0;
-    // tr->rotacija.z = 180;
     tr->velikost.x = 0.5;
     tr->velikost.y = 0.5;
     while (!glfwWindowShouldClose(okno.okno))
